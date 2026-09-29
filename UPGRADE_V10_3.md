@@ -1,0 +1,2 @@
+# Upgrade to v10.3
+Deploy over the existing Render service and keep DATA_DIR and `/var/data/isp_crm_v2.db` unchanged. No new environment variables are required. The included DOCX template must remain in the application root. Install/upgrade the Entire Wireless WooCommerce Service Ordering plugin to v1.1 so checkout sends the electronic acknowledgment/signature fields required for agreement generation.

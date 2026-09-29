@@ -1,0 +1,1 @@
+Adds $8.00 Sales Tax & Other Fees support. CRM can read the fee from Woo metadata or fee_lines. Woo order totals already include the $8.00, so imported CRM totals remain authoritative and are not double-charged. v10.10 four-plan catalog remains intact.

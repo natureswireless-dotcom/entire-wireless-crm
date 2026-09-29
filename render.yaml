@@ -1,0 +1,65 @@
+services:
+  - type: web
+    name: entire-wireless-isp-crm
+    runtime: docker
+    plan: starter
+    healthCheckPath: /health
+    disk:
+      name: crm-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: DATA_DIR
+        value: /var/data
+      - key: PUBLIC_URL
+        value: https://crm.natureswireless.org
+      - key: COOKIE_SECURE
+        value: "1"
+      - key: COMPANY_NAME
+        value: Entire Wireless
+      - key: COMPANY_LEGAL
+        value: Natures Wireless LLC
+      - key: COMPANY_SITE
+        value: https://natureswireless.org
+      - key: SUPPORT_EMAIL
+        value: support@natureswireless.org
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ADMIN_EMAIL
+        value: admin@natureswireless.org
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        value: "587"
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: SMTP_FROM
+        value: support@natureswireless.org
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: RECONNECT_FEE
+        value: "25.00"
+      - key: SUSPEND_AFTER_DAYS
+        value: "3"
+      - key: VERIZON_ENABLED
+        value: "0"
+      - key: VERIZON_DRY_RUN
+        value: "1"
+      - key: VERIZON_ACCOUNT_NAME
+        sync: false
+      - key: VERIZON_APP_KEY
+        sync: false
+      - key: VERIZON_APP_SECRET
+        sync: false
+      - key: VERIZON_UWS_USERNAME
+        sync: false
+      - key: VERIZON_UWS_PASSWORD
+        sync: false
+      - key: VERIZON_CALLBACK_TOKEN
+        sync: false

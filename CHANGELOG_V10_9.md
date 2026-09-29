@@ -1,0 +1,1 @@
+v10.9 adds the current four-plan 5G catalog and plan numbers: 59142 Residential 100 Mbps $85; 59145 Residential 200 Mbps $105; 59143 Business 100 Mbps $95; 59146 Business 200 Mbps $115. All are unlimited-data plans. Tablet/iPad is marked obsolete while historical records are retained. v10.8 invoice redesign and existing customer/document/lead functionality are preserved.
